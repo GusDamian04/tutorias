@@ -48,7 +48,6 @@ def consultas_por_periodo(request, periodo_id):
     careers = Career.objects.all()
     grupos = Group.objects.filter(period=period)
 
-    # Esto establece los meses disponibles en función del periodo
     period_months = {
         'Enero - Abril': [1, 2, 3, 4],
         'Mayo - Agosto': [5, 6, 7, 8],
